@@ -12,6 +12,10 @@ package es.iesvigan.jose.josejohn;
 public class JoseJohn {
 
     public static void main(String[] args) {
-        System.out.println("Hello World!");
+        Tablero Tablero= new Tablero();
+        System.out.println("Este es el tablero actualmente");
+        Tablero.imprimir();
+        Tablero.insertarValor();
+        Tablero.imprimir();
     }
 }
