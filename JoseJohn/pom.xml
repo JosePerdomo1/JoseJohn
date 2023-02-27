@@ -11,4 +11,12 @@
         <maven.compiler.target>19</maven.compiler.target>
         <exec.mainClass>es.iesvigan.jose.josejohn.JoseJohn</exec.mainClass>
     </properties>
+
+  <dependencies>
+    <dependency>
+      <groupId>org.assertj</groupId>
+      <artifactId>assertj-core</artifactId>
+      <version>3.13.2</version>
+    </dependency>
+  </dependencies>
 </project>
