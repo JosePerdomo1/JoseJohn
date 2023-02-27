@@ -6,6 +6,8 @@
 package es.iesvigan.jose.josejohn;
 
 import java.util.Random;
+import java.util.Scanner;
+
 
 /**
  *
@@ -14,7 +16,18 @@ import java.util.Random;
 public class JoseJohn {
     
     public static void main(String[] args) {
-        System.out.println("Hello World!");
+        int numeroCasilla,eleccion;
+        char letraCasilla;
+        Scanner teclado = new Scanner(System.in);
+
+
+        eleccion = Elegir_inicio();
+        System.out.println("El jugador " + eleccion + " comienza");
+        System.out.println("Escribe el numero");
+
+        numeroCasilla = teclado.nextInt();
+
+        letraCasilla = Mostrar_castilla_usuario(numeroCasilla);
     }
 
     public static int Elegir_inicio(){
@@ -22,7 +35,14 @@ public class JoseJohn {
         return random.nextInt(2) + 1;
     }
 
-    public Character Mostrar_castilla_usuario(){
-        return null;
+    public static char Mostrar_castilla_usuario(int numeroCasilla){
+        if (numeroCasilla == 0){
+            return '-';
+        }else if (numeroCasilla == 1){
+            return 'X';
+        }else if (numeroCasilla == 2){
+            return 'O';
+        }
+        return 0;
     }
 }
