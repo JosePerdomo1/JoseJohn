@@ -5,13 +5,24 @@
 
 package es.iesvigan.jose.josejohn;
 
+import java.util.Random;
+
 /**
  *
  * @author Jose Antonio
  */
 public class JoseJohn {
-
+    
     public static void main(String[] args) {
         System.out.println("Hello World!");
+    }
+
+    public static int Elegir_inicio(){
+        Random random = new Random();		
+        return random.nextInt(2) + 1;
+    }
+
+    public Character Mostrar_castilla_usuario(){
+        return null;
     }
 }
